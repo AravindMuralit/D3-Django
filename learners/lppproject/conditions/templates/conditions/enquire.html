@@ -1,0 +1,56 @@
+{% extends 'conditions/base.html' %}
+{% block content %}
+<h1 class="headfont"><center>Enquire Screen</center></h1> <br>
+<form method="POST">{% csrf_token %}
+    <div class="rightsection">
+        <div class="eqcontainer">
+                <div class="paracont">
+                <p> Select the field name &nbsp
+                <select name="fieldDrp" class="styled-select blue semi-square">
+                    {% for field in fields %}
+                    <option> {{field}} </option>
+                    {% endfor %}
+                </select>
+                </p>
+                <p> Select the operation &nbsp &nbsp
+                <select name="operDrp" class="styled-select blue semi-square">
+                    {% for oper in opers %}
+                    <option> {{oper}} </option>
+                    {% endfor %}
+                </select>
+                </p>
+                <p> Select the value &nbsp &nbsp &nbsp &nbsp &nbsp
+                <select name="valDrp" class="styled-select blue semi-square">
+                    {% for value in values %}
+                    <option> {{value}} </option>
+                    {% endfor %}
+                </select>
+                </p>
+                <br>
+                <input type="submit" name="filBtn" value="Show rules with above condition" class="button">
+                <br><br>
+                <input type="submit" name="filBtn" value="Show all rules" class="button">
+                </div>
+        </div>
+    </div>
+
+    <div class="leftsection">
+        <div class="textcont">
+            <table style="width:100%">
+                <tr>
+                    <th bgcolor="#3b8ec2">Rule</th>
+                    <th bgcolor="#3b8ec2">Interest rate</th>
+                </tr>
+                {% for rule, int in ruleList.items %}
+                <tr>
+                    <td>
+                        <input type="submit" name="editBtn" value="{{rule}}" class="ebutton">
+                    </td>
+                    <td>{{int}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</form>
+{% endblock %}

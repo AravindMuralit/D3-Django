@@ -1,0 +1,317 @@
+#bg{
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.leftsection {
+    float: left;
+    width:50%;
+    margin: 0;
+    padding: 1em;
+}
+
+.rightsection {
+    float: left;
+    width:50%;
+    margin: 0;
+    padding: 1em;
+}
+.container {
+    width:500px;
+    height:150px;
+    border:2px solid black;
+    border-radius: 12px;
+    margin:10% auto;
+    color:#0059b3;
+    font-family: "Trebuchet MS", Georgia, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	background-color:#A5DAEF;
+}
+
+.eqcontainer {
+    width:500px;
+    height:450px;
+    border:2px solid black;
+    border-radius: 12px;
+    margin:10% auto;
+    color:#0059b3;
+    font-family: "Trebuchet MS", Georgia, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	background-color:#A5DAEF;
+}
+
+.upcontainer {
+    width:750px;
+    height:500px;
+    border:2px solid black;
+    border-radius: 12px;
+    margin:10% auto;
+    color:#0059b3;
+    font-family: "Trebuchet MS", Georgia, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	background-color:#A5DAEF;
+}
+
+.textcont {
+  width:600px;
+  height:450px;
+  margin:10% auto;
+  border:2px solid black;
+  font-family: "Trebuchet MS", Georgia, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  background-color:#A5DAEF;
+  overflow:scroll;
+}
+
+.paracont {
+  margin:15% auto;
+  margin-left:1.5cm;
+}
+
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+.blue    { background-color: #3b8ec2; }
+
+.styled-select {
+   height: 29px;
+   overflow: hidden;
+   width: 175px;
+   text-align: center;
+   color:white;
+}
+
+.upordel-select {
+   height: 29px;
+   overflow: hidden;
+   width: 100px;
+   text-align: center;
+   color:white;
+}
+
+.lowleft-select {
+   border-radius:12px;
+   border:2px solid black;
+   height: 45px;
+   overflow: hidden;
+   width: 150px;
+   text-align:center;
+   padding: 10px 10px;
+   color:white;
+   font-family: "Trebuchet MS", Georgia, serif;
+   font-size: 18px;
+   font-style: normal;
+   font-variant: normal;
+   font-weight: 500;
+   margin: 4px 2px;
+}
+
+.button {
+    background-color: #3b8ec2;
+    border:2px solid black;
+    border-radius:12px;
+    width: 350px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Trebuchet MS", Georgia, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.updtcond {
+  width:700px;
+  height:200px;
+  margin-top: 65px;
+  border:2px solid black;
+  font-family: "Trebuchet MS", Georgia, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  background-color:#A5DAEF;
+  overflow:scroll;
+}
+
+.lowleft {
+    width:700px;
+    height:240px;
+    border:2px solid black;
+    border-radius: 12px;
+    margin-top: 10px;
+    color:#0059b3;
+    font-family: "Trebuchet MS", Georgia, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	background-color:#A5DAEF;
+}
+
+.lowpara {
+  margin:5% auto;
+  margin-left:1cm;
+}
+
+.intbox {
+  width: 2%;
+}
+.shwbutton {
+    background-color: #3b8ec2;
+    border-radius:12px;
+    border:2px solid black;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Trebuchet MS", Georgia, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.updtselect {
+    background-color: #A5DAEF;
+    color:#0059b3;
+    width: 35%;
+    padding: 12px 20px;
+    display: inline-block;
+    border:2px solid black;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Trebuchet MS", Georgia, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.editselect {
+    background-color: #A5DAEF;
+    color:#0059b3;
+    width: 75px;
+    padding: 12px 20px;
+    display: inline-block;
+    border:2px solid black;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Trebuchet MS", Georgia, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.paracss {
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Trebuchet MS", Georgia, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.ebutton {
+    background-color: #3b8ec2;
+    border:2px solid black;
+    border-radius:12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Trebuchet MS", Georgia, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.headfont {
+  color: #0C91F2;
+  font-family: "Trebuchet MS", Georgia, serif;
+  font-size: 40px;
+  text-align:center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+
+.gcontainer {
+    width:750px;
+    height:500px;
+    border:2px solid black;
+    border-radius: 12px;
+    margin:10% auto;
+    color:#0059b3;
+    font-family: "Trebuchet MS", Georgia, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	background-color:#A5DAEF;
+	overflow:scroll;
+	overflow-x:hidden;
+}

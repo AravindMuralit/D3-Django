@@ -1,0 +1,30 @@
+{% extends 'conditions/base.html' %}
+{% block content %}
+<h1 class="headfont"><center>Get LPP Screen</center></h1> <br>
+
+<form method="POST">{% csrf_token %}
+    <div class="rightsection">
+        <div class="gcontainer">
+            {% for field in fields %}
+                <p class="lowpara">
+                    <input type="text" name ="{{field}}" placeholder="{{field}}" class="updtselect">
+                    : <-- {{field}}
+                </p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="rightsection">
+        <div class="upcontainer">
+            <br>
+            <p class="lowpara">Enter all relevant claim data above and then click the below button</p>
+            <br>
+            <p class="lowpara">
+                <input type="submit" name="getLpp" value="Get LPP" class="shwbutton">
+            </p>
+            <br>
+            <p class="lowpara">{{intText}}</p>
+        </div>
+    </div>
+</form>
+{% endblock %}

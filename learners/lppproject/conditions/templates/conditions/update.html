@@ -1,0 +1,67 @@
+{% extends 'conditions/base.html' %}
+{% block content %}
+<h1 class="headfont"><center>Insert Screen</center></h1> <br>
+<form method="POST">{% csrf_token %}
+<div class="leftsection">
+    <div class="updtcond">
+        <table style="width:100%">
+            <tr>
+                <th bgcolor="#3b8ec2">Condition Name</th>
+                <th bgcolor="#3b8ec2">Condition</th>
+            </tr>
+            {% for cond in listCond %}
+            <tr>
+                <td>{{cond.name}}</td>
+                <td>{{cond.field}} {{cond.oper}} {{cond.valuetext}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="lowleft">
+        <!--<form method="POST">{% csrf_token %}-->
+            <div class="lowpara">
+            <select name="fieldDrp" class="lowleft-select blue semi-square">
+                {% for field in fields %}
+                <option> {{field}} </option>
+                {% endfor %}
+            </select>
+            <input type="submit" name="shwBtn" value="Show related conditions" class="shwbutton">
+            <input type="submit" name="shwBtn" value="Show all conditions" class="shwbutton">
+            <br>
+            <input type="text" name ="newField" placeholder="Enter field" class="updtselect">
+            <select name="operDrp" class="lowleft-select blue semi-square">
+                <option> eq </option>
+                <option> ne </option>
+                <option> ge </option>
+                <option> gt </option>
+                <option> le </option>
+                <option> lt </option>
+            </select>
+            <input type="text" name="newvalue" placeholder="Enter Value" class="updtselect">
+            <br>
+            <input type="submit" name="shwBtn" value="Insert above condition" class="shwbutton">
+                {{message}}
+            </div>
+        <!--</form>-->
+    </div>
+</div>
+
+<div class="rightsection">
+    <div class="eqcontainer">
+        <!--<form method="POST">{% csrf_token %}-->
+            <div class="lowpara">
+            <textarea name="ruleArea" rows="4" cols="30">{{ruleText}}</textarea>
+            <br><br>
+            <input type="submit" name="filBtn" value="Validate" class="shwbutton">
+            <br>
+            If above is valid, interest is<input type="text" name ="interest" placeholder="Interest %" class="updtselect">
+            <br>
+            <input type="submit" name="filBtn" value="Insert rule" class="shwbutton">
+            <br><br>
+            <p>{{valMsg}}</p>
+            </div>
+        <!--</form>-->
+    </div>
+</div>
+</form>
+{% endblock %}

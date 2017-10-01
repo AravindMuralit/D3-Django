@@ -1,0 +1,28 @@
+{% extends 'conditions/base.html' %}
+{% block content %}
+<h1 class="headfont"><center>Update/Delete Screen</center></h1> <br>
+<div class="rightsection">
+    <form method="POST">{% csrf_token %}
+
+        <div class="upcontainer">
+                <div class="lowpara">
+                    <p>
+                        For the condition :
+                        <textarea name="ruledata" rows="2" cols="25" readonly> {{ruleText}} </textarea><br><br>
+                    Interest rate is
+                    <input type="text" name ="intrte" placeholder="{{intrte}}" class="editselect">
+                    </p>
+                    <br> Comments:
+                    <textarea name="comments" rows="2" cols="25" style="align-content:left">
+                    </textarea><br><br>
+                    <input type="submit" name="edtBtn" value="Update" class="ebutton">
+                    <input type="submit" name="edtBtn" value="Delete" class="ebutton">
+                    <br><br>
+                    <p>{{upmsg}}</p>
+                </div>
+        </div>
+        </div>
+
+    </form>
+</div>
+{% endblock %}

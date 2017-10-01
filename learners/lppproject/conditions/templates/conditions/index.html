@@ -1,0 +1,19 @@
+{% extends 'conditions/base.html' %}
+{% block content %}
+<div class="leftsection">
+    <div class="container">
+        <h2><a href="{% url 'cond_enq' %}"> <b>Enquire/Update Rules</b></a></h2>
+        <p> Click here to view all rules in the system</p>
+    </div>
+
+    <div class="container">
+        <h2> <a href="{% url 'cond_updt' %}"> <b>Insert rules</b></a> </h2>
+        <p> Click here to insert rules and conditions</p>
+    </div>
+
+    <div class="container">
+        <h2> <a href="{% url 'get_lpp' %}"> <b>Get LPP</b></a> </h2>
+        <p> Click here to get Late payment penalty on giving claim details</p>
+    </div>
+</div>
+{% endblock %}
